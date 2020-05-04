@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738552757799",
+    "firebase_url": "https://tasker-bot.firebaseio.com",
+    "project_id": "tasker-bot",
+    "storage_bucket": "tasker-bot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738552757799:android:82de90b14ccfb6ad6ad802",
+        "android_client_info": {
+          "package_name": "com.lk.tasker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738552757799-q9gcm03rc40inl4svqo406dmi0e6fjt5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lk.tasker",
+            "certificate_hash": "2db5b329471c0df85be047fd50673c6c9b07a31c"
+          }
+        },
+        {
+          "client_id": "738552757799-n67779u69apc6rpr25lekosae261ilhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmWsyLdyhTf9X_IW5T5W9hdT6xoJprwvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738552757799-n67779u69apc6rpr25lekosae261ilhe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
