@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="#4d4d4d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vMedics" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="#4d4d4d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.jnarkrd.com" />
+
+</LinearLayout>

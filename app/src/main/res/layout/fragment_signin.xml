@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".siginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#020202">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="247dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/editext_round"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="247dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/editext_round"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/etPassword"-->
+<!--            android:layout_width="247dp"-->
+<!--            android:layout_height="38dp"-->
+<!--            android:layout_marginTop="28dp"-->
+<!--            android:background="@drawable/editext_round"-->
+<!--            android:hint="Password"-->
+<!--            android:inputType="text"-->
+<!--            android:maxLength="50"-->
+<!--            android:maxLines="1"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:singleLine="true"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/etEmail" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLayout">
+
+            <Button
+                android:id="@+id/signinBtn"
+                android:layout_width="123dp"
+                android:layout_height="46dp"
+                android:background="@drawable/btn_rounded_accent"
+                android:text="S I G N   I N" />
+            <Button
+                android:id="@+id/sendResetLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_accent"
+                android:text="SEND LINK"
+                android:visibility="gone"
+                />
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:theme="@style/Widget.AppCompat.ProgressBar"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/forgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toRegister" />
+
+
+        <TextView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Back to Login"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <TextView
+            android:id="@+id/toRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Register to tasker"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

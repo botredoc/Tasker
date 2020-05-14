@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TaskerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#F44336</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
 </resources>
