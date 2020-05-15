@@ -3,4 +3,11 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name = "background" >#94a49c</color>
+    <color name="text">#345056</color>
+    <color name="progressBar">#5ea285</color>
+    <color name="stripeColorStart">#17A52066</color>
+    <color name="stripeColorEnd">#11ECA274</color>
+    <color name="colorTransparent">#00ffffff</color>
+
 </resources>

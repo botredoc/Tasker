@@ -81,12 +81,12 @@ class loginActivity : AppCompatActivity() {
 
         return valid
     }
-    public override fun onStart() {
-        super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
-        startActivity(Intent(baseContext,HomeActivity::class.java))
-    }
-////    public override fun onStart() {
+//    public override fun onStart() {
+//        super.onStart()
+//        // Check if user is signed in (non-null) and update UI accordingly.
+//        startActivity(Intent(baseContext,HomeActivity::class.java))
+//    }
+//////    public override fun onStart() {
 ////        super.onStart()
 ////        // Check if user is signed in (non-null) and update UI accordingly.
 ////        val currentUser = auth.currentUser
