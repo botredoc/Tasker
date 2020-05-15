@@ -49,7 +49,7 @@ class splash_screen : AppCompatActivity() {
         Handler().postDelayed({
 
             startActivity(Intent(this,loginActivity::class.java))
-            overridePendingTransition(R.anim.slide_in,R.anim.no_animation)
+        //    overridePendingTransition(R.anim.slide_in,R.anim.no_animation)
             finish()
 
         }, SPLASH_TIME_OUT)
