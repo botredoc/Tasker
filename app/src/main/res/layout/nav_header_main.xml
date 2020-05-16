@@ -15,14 +15,14 @@
         app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/appName"
         android:textColor="#4d4d4d"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="vMedics" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/extratext"
         android:textColor="#4d4d4d"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

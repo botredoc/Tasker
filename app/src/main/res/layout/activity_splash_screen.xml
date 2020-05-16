@@ -128,57 +128,57 @@
         android:layout_height="100dp"
         android:layout_marginTop="180dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/appName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="TASKER"
-            android:fontFamily= "@font/bomb"
-            android:textColor="@color/text"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/avlanche"
-            android:gravity="center"
-            android:text="Change Way To Store"
-            android:textColor="@color/text"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="70dp"
-            app:layout_constraintBottom_toTopOf="@id/textView1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.775"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-<!--    <ProgressBar-->
-<!--        android:id="@+id/progressBar"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginBottom="170dp"-->
-<!--        android:indeterminateTint="@color/progressBar"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/textView1"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />-->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TASKER"
+        android:fontFamily= "@font/bomb"
+        android:textColor="@color/text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/extratext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/extratext"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/extratext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avlanche"
+        android:gravity="center"
+        android:text="Change Way To Store"
+        android:textColor="@color/text"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@id/devName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progressBar"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="170dp"-->
+    <!--        android:indeterminateTint="@color/progressBar"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/textView1"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />-->
+
+    <TextView
+        android:id="@+id/devName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/space"
@@ -188,14 +188,14 @@
         android:textColor="@color/text"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/devImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"/>
+        app:layout_constraintTop_toBottomOf="@+id/extratext"
+        app:layout_constraintTop_toTopOf="@+id/devImage"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/devImage"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_marginBottom="20dp"
@@ -203,7 +203,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+        app:layout_constraintTop_toBottomOf="@+id/devName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
